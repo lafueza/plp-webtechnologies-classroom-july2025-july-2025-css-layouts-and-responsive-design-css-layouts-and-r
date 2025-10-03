@@ -1,0 +1,186 @@
+/* ===========================
+    Global Styles
+=========================== */
+body {
+     margin: 0;
+     font-family: 'Segoe UI', Arial, sans-serif;
+     background: #f8f9fa;
+     color: #222;
+}
+
+/* ===========================
+    Navbar Styles
+=========================== */
+.navbar {
+     display: flex;
+     flex-wrap: wrap;
+     align-items: center;
+     justify-content: space-between;
+     background: #2d3e50;
+     padding: 1rem 2rem;
+     color: #fff;
+}
+
+.navbar-header {
+     display: flex;
+     align-items: center;
+     gap: 1rem;
+}
+
+.navbar-header h1 {
+     margin: 0;
+     font-size: 1.8rem;
+     font-weight: 700;
+     letter-spacing: 2px;
+}
+
+.greet-btn {
+     background: #f9a825;
+     color: #fff;
+     border: none;
+     padding: 0.5rem 1.2rem;
+     border-radius: 4px;
+     cursor: pointer;
+     font-size: 1rem;
+     transition: background 0.2s;
+}
+
+.greet-btn:hover {
+     background: #c17900;
+}
+
+/* ===========================
+    Search Form Styles
+=========================== */
+.search-form {
+     display: flex;
+     align-items: center;
+     gap: 0.5rem;
+}
+
+.search-form input[type="text"] {
+     padding: 0.4rem 0.8rem;
+     border: 1px solid #ccc;
+     border-radius: 4px;
+     font-size: 1rem;
+}
+
+.search-form button {
+     background: #1976d2;
+     color: #fff;
+     border: none;
+     padding: 0.4rem 1rem;
+     border-radius: 4px;
+     cursor: pointer;
+     font-size: 1rem;
+     transition: background 0.2s;
+}
+
+.search-form button:hover {
+     background: #0d47a1;
+}
+
+/* ===========================
+    Navigation Links Styles
+=========================== */
+.nav-links {
+     display: flex;
+     gap: 1.5rem;
+     list-style: none;
+     margin: 0;
+     padding: 0;
+}
+
+.nav-links a {
+     color: #fff;
+     text-decoration: none;
+     font-weight: 500;
+     padding: 0.3rem 0.7rem;
+     border-radius: 3px;
+     transition: background 0.2s;
+}
+
+.nav-links a:hover {
+     background: #1976d2;
+}
+
+/* ===========================
+    Main Content Styles
+=========================== */
+.main-content {
+     max-width: 1200px;
+     margin: 2rem auto;
+     padding: 0 1rem;
+}
+
+/* ===========================
+    Grid Demo Section
+=========================== */
+.grid-demo {
+     display: grid;
+     grid-template-columns: repeat(4, 1fr);
+     gap: 1.5rem;
+     margin-top: 2rem;
+}
+
+.grid-item {
+     background: #fff;
+     border-radius: 8px;
+     box-shadow: 0 2px 8px rgba(44, 62, 80, 0.08);
+     padding: 2rem;
+     text-align: center;
+     font-size: 1.2rem;
+     font-weight: 500;
+     color: #2d3e50;
+     transition: box-shadow 0.2s;
+}
+
+.grid-item:hover {
+     box-shadow: 0 4px 16px rgba(44, 62, 80, 0.15);
+}
+
+/* ===========================
+    Responsive Styles
+=========================== */
+
+/* Tablet breakpoint */
+@media (max-width: 900px) {
+     .grid-demo {
+          grid-template-columns: repeat(2, 1fr);
+     }
+     .navbar {
+          flex-direction: column;
+          align-items: stretch;
+          gap: 1rem;
+     }
+     .nav-links {
+          justify-content: flex-start;
+     }
+}
+
+/* Mobile breakpoint */
+@media (max-width: 600px) {
+     .main-content {
+          padding: 0 0.5rem;
+     }
+     .grid-demo {
+          grid-template-columns: 1fr;
+     }
+     .navbar-header h1 {
+          font-size: 1.3rem;
+     }
+     .nav-links {
+          flex-direction: column;
+          gap: 0.7rem;
+     }
+     .navbar {
+          padding: 1rem;
+     }
+     .search-form input[type="text"] {
+          width: 100px;
+     }
+}
+
+/* ===========================
+    End of Styles
+=========================== */
